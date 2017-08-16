@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Wikipedia Viewer - Kristen Goehringer</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:300,400" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+		<script
+		src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Wikipedia Viewer</h1>	
+			<div class="box">
+				<div class="form-box">
+					<form>
+						<input type="text" placeholder="Search term" id="text-in">
+						<button class="button" id="submit">Submit</button>
+					</form>
+					<a href="https://en.wikipedia.org/wiki/Special:Random"><button class="button">Random Article</button></a>					
+					
+				</div>
+				<div class="results">
+						<ul id="res">
+							
+						</ul>
+					</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
