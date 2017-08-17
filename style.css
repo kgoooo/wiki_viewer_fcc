@@ -5,6 +5,9 @@ body {
 	background: linear-gradient(to bottom, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	height: 100vh;
 	background-attachment: fixed;
+	margin-left: auto;
+	margin-right: auto;
+	/* width: 1200px; */
 }
 
 h1 {
@@ -57,7 +60,6 @@ a:active {
 .form-box {
 	margin-left: auto;
 	margin-right: auto;
-	width: 70%;
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -122,4 +124,29 @@ form input:first-child {
 
 #text-in {
 	outline: none;
+}
+
+// MEDIA QUERIES
+/* Big tablet to 1200px (widths smaller than 1140) */
+@media only screen and (max-width: 1200px){
+
+}
+
+
+
+/* Small phones to small tablets  --  All the phones that are smaller than the iPad  From 481-767px */
+@media only screen and (max-width: 924px){
+	.form-box {
+		flex-wrap: wrap;
+	}
+}
+
+/* Small phones from 0 - 480 px */
+@media only screen and (max-width: 600px){
+	#text-in {
+		width: 80%;
+	}
+	.div-box {
+		width: 90%;
+	}
 }

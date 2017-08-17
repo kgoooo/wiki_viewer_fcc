@@ -1,6 +1,8 @@
 // 'https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrlimit=10&format=json&callback=JSON_CALLBACK&prop=extracts&prop=extracts&exintro&exsentences=3&exlimit=max&gsrsearch=' + searchTerm + '&callback=?'
 $(document).ready(() => {
 	console.log('started');
+	document.getElementById("text-in").focus();
+	
 	$("#submit").on('click', () => {
 		var searchTerm = $("#text-in").val();
 		search(searchTerm);
