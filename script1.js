@@ -28,7 +28,6 @@ var search = (searchTerm) => {
 		crossDomain: true,
 		headers: { 'Api-User-Agent': 'WikiApp' },
 		success: function(data){
-			console.log(data);
 			getWikis(data);
 		},
 		error: function(req, status, err) {
